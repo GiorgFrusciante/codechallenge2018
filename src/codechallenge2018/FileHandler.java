@@ -19,7 +19,7 @@ public class FileHandler
     
     public void setInputFile(String inputFile) throws FileNotFoundException { in = new BufferedReader(new FileReader(inputFile)); }
     
-    public void setOutputFile(String outputFile) throws IOException { out = new PrintWriter(outputFile); }
+    public void setOutputFile(String outputFile) throws IOException { out = new PrintWriter(outputFile,"UTF-8"); }
     
 	public String readLine() throws IOException { return in.readLine(); }
 	
