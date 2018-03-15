@@ -4,10 +4,12 @@ import java.util.HashMap;
 
 public class Provider {
 	
+	private String nome;
 	private int nRegioni;
 	private HashMap<String, Region> regioni = new HashMap<String, Region>();
 	
-	public Provider(int nRegioni) {
+	public Provider(String nome, int nRegioni) {
+		this.nome = nome;
 		this.nRegioni = nRegioni;
 	}
 	
